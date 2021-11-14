@@ -18,7 +18,7 @@ const Show = (props) => {
           const oneCheese = cheese.find((c) => c._id === id);
           setEditForm(oneCheese)
       }
-  }, [props.cheese])
+  }, [props.cheese, id])
 
   if (props.cheese) {
     // grab the target person from the people array
