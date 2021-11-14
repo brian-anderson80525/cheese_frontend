@@ -14,11 +14,11 @@ const Show = (props) => {
   const [editForm, setEditForm] = useState({})
   // useEffect to set state to the existing person, when the data is available
   useEffect(() => {
-      if(props.cheese){
+      if(cheese){
           const oneCheese = cheese.find((c) => c._id === id);
           setEditForm(oneCheese)
       }
-  }, [props.cheese, id])
+  }, [cheese, id])
 
   if (props.cheese) {
     // grab the target person from the people array
